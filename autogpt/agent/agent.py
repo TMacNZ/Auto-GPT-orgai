@@ -224,13 +224,13 @@ class Agent:
                     self.full_message_history.append(
                         create_chat_message("system", result)
                     )
-                    logger.typewriter_log("SYSTEM: ", Fore.YELLOW, result)
+                    logger.typewriter_log("SYSTEM(ORGAI): ", Fore.YELLOW, result)
                 else:
                     self.full_message_history.append(
                         create_chat_message("system", "Unable to execute command")
                     )
                     logger.typewriter_log(
-                        "SYSTEM: ", Fore.YELLOW, "Unable to execute command"
+                        "SYSTE(ORGAI)): ", Fore.YELLOW, "Unable to execute command"
                     )
 
     def _resolve_pathlike_command_args(self, command_args):
